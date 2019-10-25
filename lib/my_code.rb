@@ -51,15 +51,15 @@ end
 # Reduce-like
 
 def reduce_to_total(source_array, starting_point = 0)
-  total = nil
+  total = []
   count = starting_point
   
   while count < source_array.count do
-    total += source_array[starting_point]
+    total[0] += source_array[starting_point]
     count += 1
   end
   
-  return total
+  return total[0]
 end
 
 
