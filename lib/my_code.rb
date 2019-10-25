@@ -14,4 +14,13 @@ def map_to_negativize(source_array)
   return negativize
 end
 
+
 def map_to_no_change(source_array)
+  no_change = source_array
+  
+  return no_change
+end
+
+
+def map_to_double(source_array)
+  
