@@ -63,13 +63,7 @@ end
 
 
 def reduce_to_all_true(source_array)
-  count = 0
-  all_true = []
+  all_true = true
   
-  while count < source_array.count do
-    square << source_array[count] ** (2)
-    count += 1
-  end
-  
-  return square
+  return all_true
 end
