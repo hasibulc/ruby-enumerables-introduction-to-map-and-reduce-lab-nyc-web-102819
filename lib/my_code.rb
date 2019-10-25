@@ -52,11 +52,11 @@ end
 
 def reduce_to_total(source_array, starting_point = 0)
   total = 0
+  count = starting_point
   
-    count = starting_point
-    while count < source_array.count do
-      total += source_array[count]
-      count += 1
+  while count < source_array.count do
+    total += source_array[count]
+    count += 1
   end
   return total
 end
