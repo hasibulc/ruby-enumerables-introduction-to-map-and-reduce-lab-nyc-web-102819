@@ -69,3 +69,12 @@ def reduce_to_all_true(source_array)
     return true
   end
 end
+
+
+def reduce_to_any_true(source_array)
+  if source_array.include?true
+    return true
+  else
+    return nil
+  end
+end
