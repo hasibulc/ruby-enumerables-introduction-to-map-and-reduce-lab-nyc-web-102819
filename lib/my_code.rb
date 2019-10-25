@@ -62,4 +62,14 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 
-def 
+def reduce_to_all_true(source_array)
+  count = 0
+  all_true = []
+  
+  while count < source_array.count do
+    square << source_array[count] ** (2)
+    count += 1
+  end
+  
+  return square
+end
