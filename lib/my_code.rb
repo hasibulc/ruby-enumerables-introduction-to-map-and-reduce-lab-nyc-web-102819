@@ -64,7 +64,7 @@ end
 
 def reduce_to_all_true(source_array)
   if source_array.include?false
-    return nil
+    return false
   else
     return true
   end
@@ -75,6 +75,6 @@ def reduce_to_any_true(source_array)
   if source_array.include?true
     return true
   else
-    return nil
+    return false
   end
 end
