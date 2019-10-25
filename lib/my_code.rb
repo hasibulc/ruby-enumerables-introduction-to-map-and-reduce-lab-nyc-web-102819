@@ -2,12 +2,13 @@
 
 #Map-like
 
-def map_to_negativize{source_array)
-  count = source_array.count
+def map_to_negativize(source_array)
+  count = 0
   negativize = []
   
-  for count in source_array do
+  while count < source_array.count do
     negativize << source_array[count] * (-1)
+    count += 1
   end
   
   return negativize
