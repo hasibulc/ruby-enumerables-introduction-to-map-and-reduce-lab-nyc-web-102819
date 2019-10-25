@@ -50,7 +50,7 @@ end
 
 # Reduce-like
 
-def reduce_to_total(source_array, starting_point)
+def reduce_to_total(source_array, starting_point = 0)
   total_array = []
   
   while starting_point < source_array.count do
