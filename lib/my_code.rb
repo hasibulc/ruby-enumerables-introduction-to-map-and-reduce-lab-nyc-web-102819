@@ -51,15 +51,20 @@ end
 # Reduce-like
 
 def reduce_to_total(source_array, starting_point = 0)
-  total = []
-  count = starting_point
+  total = 0
   
-  while count < source_array.count do
-    total[0] += source_array[starting_point]
-    count += 1
-  end
-  
-  total[0]
+  if starting_point > 0
+    count = starting_point - 1
+    while starting_point < source_array.count do
+      total += source_array[count]
+      count += 1
+    end
+  else
+    while starting_point < source_array.count do
+      total += source_array[starting_point]
+      count += 1
+
+  return total
 end
 
 
