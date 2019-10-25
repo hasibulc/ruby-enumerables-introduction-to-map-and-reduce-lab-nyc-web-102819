@@ -1,6 +1,6 @@
 # My Code here....
 
-#Map-like
+# Map-like
 
 def map_to_negativize(source_array)
   count = 0
@@ -33,3 +33,20 @@ def map_to_double(source_array)
   
   return double
 end
+
+
+def map_to_square(source_array)
+  count = 0
+  square = []
+  
+  while count < source_array.count do
+    square << source_array[count] ** (2)
+    count += 1
+  end
+  
+  return square
+end
+
+
+# Reduce-like
+
